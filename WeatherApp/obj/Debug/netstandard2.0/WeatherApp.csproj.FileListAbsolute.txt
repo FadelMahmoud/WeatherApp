@@ -1,0 +1,14 @@
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\bin\Debug\netstandard2.0\WeatherApp.deps.json
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\bin\Debug\netstandard2.0\WeatherApp.dll
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\bin\Debug\netstandard2.0\ref\WeatherApp.dll
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\bin\Debug\netstandard2.0\WeatherApp.pdb
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\Views\CurrentWeatherPage.xaml.g.cs
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.AssemblyInfoInputs.cache
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.AssemblyInfo.cs
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.csproj.CoreCompileInputs.cache
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.dll
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\ref\WeatherApp.dll
+D:\Visual studio projects\Xamarin.Forms\projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.pdb

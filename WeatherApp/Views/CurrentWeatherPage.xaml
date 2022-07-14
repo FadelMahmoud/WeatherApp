@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WeatherApp.Views.CurrentWeatherPage">
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" RowSpacing="0" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <BoxView Grid.RowSpan="2" BackgroundColor="#7585BA" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <Image x:Name="bgImg" Grid.RowSpan="2" Source="bg.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <Image Grid.RowSpan="2" Source="overlay.png" Aspect="AspectFill" Opacity="0.6"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            <ImageButton Source="menu.png" VerticalOptions="Center" HorizontalOptions="Start" WidthRequest="23" HeightRequest="15" Margin="20" />
+            <Grid Grid.Row="1">
+                <StackLayout Spacing="20">  
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing=" 40">
+                        <StackLayout VerticalOptions="Center">
+                            <Image x:Name="iconImg" Source="cloud.png" WidthRequest="60" HeightRequest="60" HorizontalOptions="Center" Margin="0,-15,0,0"/>
+                            <Label x:Name="descriptionTxt" Text="Cloudy" HorizontalOptions="Center" TextColor="White" Margin="0,-6,0,0"/>
+                        </StackLayout>
+                        <StackLayout VerticalOptions="Center">
+                            <Label x:Name="cityTxt" Text="LONDON" FontAttributes="Bold" TextColor="White" FontSize="20" HorizontalOptions="Center"/>
+                            <Label x:Name="dateTxt" Text="Saturday, NOV 27" HorizontalOptions="Center" FontSize="15" Opacity="0.7" Margin="0,-5,0,0" TextColor="White"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout >
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0" >
+                            <Label x:Name="temperatureTxt" Text="25" HorizontalOptions="Center" TextColor="White" FontSize="180"/>
+                            <Label Text="°"  HorizontalOptions="Center" TextColor="White" FontSize="120"  />
+                        </StackLayout>
+                        <Label Text="CELSUS" HorizontalOptions="Center" FontSize="15" TextColor="White" Opacity="0.7" Margin="0,-38,0,0"/>
+                    </StackLayout>
+                    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" Margin="35,20,35,0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid >
+                            <StackLayout>
+                                <Image Source="humidity.png" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25"/>
+                                <Label x:Name="humidityTxt" Text="50%" HorizontalOptions="Center" FontSize="15" TextColor="White"/>
+                                <Label Text="Humidity" HorizontalOptions="Center" Margin="0,-5,0,0" FontSize="13" TextColor="White"/>
+                            </StackLayout>
+                        </Grid>
+                        <Grid Grid.Column="1" >
+                            <StackLayout>
+                                <Image Source="wind.png" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25"/>
+                                <Label x:Name="windTxt" Text="2.6 m/s" HorizontalOptions="Center" FontSize="15" TextColor="White"/>
+                                <Label Text="Wind" HorizontalOptions="Center" Margin="0,-5,0,0" FontSize="13" TextColor="White"/>
+                            </StackLayout>
+                        </Grid>
+                        <Grid Grid.Column="2">
+                            <StackLayout>
+                                <Image Source="gauge.png" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25"/>
+                                <Label x:Name="pressureTxt" Text="1011 hpa" HorizontalOptions="Center" FontSize="15" TextColor="White"/>
+                                <Label Text="Pressure" HorizontalOptions="Center" Margin="0,-5,0,0" FontSize="13" TextColor="White"/>
+                            </StackLayout>
+                        </Grid>
+                        <Grid Grid.Column="3">
+                            <StackLayout>
+                                <Image Source="cloudiness.png" HorizontalOptions="Center" HeightRequest="25" WidthRequest="25"/>
+                                <Label x:Name="cloudinessTxt" Text="25%" HorizontalOptions="Center" FontSize="15" TextColor="White"/>
+                                <Label Text="Cloudiness" HorizontalOptions="Center" Margin="0,-5,0,0" FontSize="13" TextColor="White"/>
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+                </StackLayout>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="1" HeightRequest="150" ColumnSpacing="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid BackgroundColor="#758ABA">
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                    <Label x:Name="dayOneTxt" Text="Sunday" HorizontalOptions="Center" TextColor="White" FontSize="16"/>
+                    <Label x:Name="dateOneTxt" Text="28 NOV" Margin="0,-5,0,0" HorizontalOptions="Center" TextColor="White" FontSize="12"/>
+                    <Image x:Name="iconOneImg" Source="cloud.png" Margin="0,15" HorizontalOptions="Center" HeightRequest="30" WidthRequest="30"/>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+                        <Label x:Name="tempOneTxt" Text="22" HorizontalOptions="Center" TextColor="White" FontSize="23"/>
+                        <Label Text="°" HorizontalOptions="Center" TextColor="White" FontSize="23"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Column="1" BackgroundColor="#758ABA" Opacity="0.8">
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                    <Label x:Name="dayTwoTxt" Text="Monday" HorizontalOptions="Center" TextColor="White" FontSize="16"/>
+                    <Label x:Name="dateTwoTxt" Text="29 NOV" Margin="0,-5,0,0" HorizontalOptions="Center" TextColor="White" FontSize="12"/>
+                    <Image x:Name="iconTwoImg" Source="cloud.png" Margin="0,15" HorizontalOptions="Center" HeightRequest="30" WidthRequest="30"/>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+                        <Label x:Name="tempTwoTxt" Text="26" HorizontalOptions="Center" TextColor="White" FontSize="23"/>
+                        <Label Text="°" HorizontalOptions="Center" TextColor="White" FontSize="23"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Column="2" BackgroundColor="#758ABA" Opacity="0.6">
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                    <Label x:Name="dayThreeTxt" Text="Tuesday" HorizontalOptions="Center" TextColor="White" FontSize="16"/>
+                    <Label x:Name="dateThreeTxt" Text="30 NOV" Margin="0,-5,0,0" HorizontalOptions="Center" TextColor="White" FontSize="12"/>
+                    <Image x:Name="iconThreeImg" Source="cloud.png" Margin="0,15" HorizontalOptions="Center" HeightRequest="30" WidthRequest="30"/>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+                        <Label x:Name="tempThreeTxt" Text="23" HorizontalOptions="Center" TextColor="White" FontSize="23"/>
+                        <Label Text="°" HorizontalOptions="Center" TextColor="White" FontSize="23"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</ContentPage>
