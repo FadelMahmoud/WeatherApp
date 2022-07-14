@@ -1,5 +1,5 @@
 # WeatherApp
-A cross-platform Weather Mobile App developed using Xamarin & API on February 2021. <br />
+A cross-platform Weather Mobile App developed using Xamarin & API in February 2021. <br />
 
 ## **Single app screen:** <br />
 
